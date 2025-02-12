@@ -1,0 +1,39 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* Ajuste del navbar */
+.navbar {
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste del logo */
+.logo-register {
+    width: 120px;
+    height: auto;
+}
+
+/* Estilos del formulario */
+.card {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Centrar el formulario verticalmente */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ajuste del footer */
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

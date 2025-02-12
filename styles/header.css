@@ -1,0 +1,60 @@
+/* Estilo general del navbar */
+.navbar {
+    background-color: #212529 !important; /* Color oscuro */
+    padding: 10px 15px;
+}
+
+/* Ajuste del logo en el navbar */
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+/* Espaciado entre los elementos del menú */
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+/* Estilos del enlace de sesión para que coincida con el navbar */
+.navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #17a2b8 !important; /* Color de Bootstrap info */
+}
+
+/* Dropdown menú estilos */
+.dropdown-menu {
+    background-color: #343a40; /* Color oscuro */
+    border: none;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #17a2b8;
+}
+
+/* Ajuste del botón hamburguesa en móvil */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Asegurar visibilidad correcta del dropdown en móviles */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #212529;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
