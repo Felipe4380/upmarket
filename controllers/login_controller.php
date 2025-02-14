@@ -32,15 +32,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['usuario_id'] = $usuario['id_usuario'];
             $_SESSION['usuario_nombre'] = $usuario['nombre'];
             $_SESSION['usuario_email'] = $usuario['email'];
-            $_SESSION['usuario_rol'] = $usuario['id_rol'];
+            $_SESSION['idtipousuario'] = $usuario['id_rol']; // Cambié a idtipousuario para que coincida con tu header
 
             // Redirigir según el rol del usuario
             if ($usuario['id_rol'] == 1) {
-                header("Location: ../views/admin.php"); // Vista de administrador
+                header("Location: ../index.php?view=admin"); // Ahora manda a index con vista admin
             } else {
                 header("Location: ../index.php"); // Vista normal
             }
             exit();
+            
         } else {
             $_SESSION['error'] = "Correo o contraseña incorrectos.";
             header("Location: ../views/login.php");

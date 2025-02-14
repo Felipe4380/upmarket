@@ -1,9 +1,8 @@
 <?php
-require_once '../controllers/clientes_controller.php';
-require_once '../layouts/header.php';
+require_once 'controllers/clientes_controller.php';
 ?>
 
-<link href="../styles/clientes.css" rel="stylesheet">
+<link href="styles/clientes.css" rel="stylesheet">
 
 <div class="container mt-4">
     <h2 class="text-center mb-4">Listado de Clientes</h2>
@@ -26,7 +25,7 @@ require_once '../layouts/header.php';
                 <?php if (!empty($clientes)): ?>
                     <?php foreach ($clientes as $cliente): ?>
                         <tr>
-                            <td><?= htmlspecialchars($cliente['id_cliente']); ?></td>
+                            <td><?= htmlspecialchars($cliente['id_usuario']); ?></td>
                             <td><?= htmlspecialchars($cliente['nombre']); ?></td>
                             <td><?= htmlspecialchars($cliente['email']); ?></td>
                             <td><?= htmlspecialchars($cliente['telefono']); ?></td>
@@ -41,5 +40,3 @@ require_once '../layouts/header.php';
         </table>
     </div>
 </div>
-
-<?php require_once '../layouts/footer.php'; ?>

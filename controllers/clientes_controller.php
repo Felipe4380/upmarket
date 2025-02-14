@@ -1,9 +1,9 @@
 <?php
-require_once '../conexion.php';
+require_once __DIR__ . '/../conexion.php'; // Esto sube un nivel y busca tu conexion.php
 
 try {
-    $stmt = $conexion->query("SELECT id_cliente, nombre, email, telefono FROM clientes");
-    $clientes = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $stmt = $pdo->query("SELECT id_usuario, nombre, email, telefono FROM usuarios WHERE id_rol = 3");
+    $clientes = $stmt->fetchAll();
 } catch (PDOException $e) {
     $clientes = [];
     $error = "Error al obtener clientes: " . $e->getMessage();

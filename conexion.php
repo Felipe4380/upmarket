@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $dbname = "up_market";
-$db_user = "rot";
+$db_user = "root";
 $db_pass = "";
 $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
 $options = [

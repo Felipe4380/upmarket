@@ -1,9 +1,8 @@
-
 <?php
-require_once '../layouts/header.php';
+// No necesitas llamar al header ni al footer porque ya se incluye en el index.php
 ?>
 
-<link href="../styles/paquetes.css" rel="stylesheet">
+<link href="styles/paquetes.css" rel="stylesheet">
 
 <div class="container mt-5">
     <h2 class="text-center mb-4">Nuestros Paquetes de Servicios</h2>
@@ -60,5 +59,3 @@ require_once '../layouts/header.php';
         </div>
     </div>
 </div>
-
-<?php require_once '../layouts/footer.php'; ?>

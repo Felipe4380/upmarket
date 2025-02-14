@@ -19,6 +19,10 @@ switch ($view) {
     case 'tareas':
         include 'views/tareas.php';
         break;
+        
+    case 'admin':
+            include 'views/admin.php'; // Opcional por si agregas esta vista después
+            break;
     default:
         include 'views/home.php'; // Vista por defecto
         break;

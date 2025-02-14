@@ -34,14 +34,17 @@ if (session_status() == PHP_SESSION_NONE) {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link" href="index.php?view=clientes">Clientes</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?view=paquetes">Paquetes</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php?view=servicios">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php?view=tareas">Tareas</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?view=home">home</a></li>
+
 
                 <!-- Mostrar opciones solo si el usuario es Admin -->
                 <?php if (isset($_SESSION['usuario_id']) && isset($_SESSION['idtipousuario']) && $_SESSION['idtipousuario'] == 1): ?>
                     <li class="nav-item"><a class="nav-link" href="index.php?view=admin">Administración</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?view=clientes">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?view=paquetes">Paquetes</a></li>
+                    
                 <?php endif; ?>
             </ul>
 
@@ -107,5 +110,3 @@ if (session_status() == PHP_SESSION_NONE) {
     });
 </script>
 
-</body>
-</html>
