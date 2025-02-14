@@ -22,7 +22,7 @@ if (isset($_SESSION['usuario_id'])) {
     <link href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Estilos personalizados -->
-    <link href="../styles/register.css" rel="stylesheet">
+    <link href="../styles/login.css" rel="stylesheet">
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
 
@@ -36,9 +36,10 @@ if (isset($_SESSION['usuario_id'])) {
     </nav>
 
     <!-- Contenedor del formulario (llamando a registro_usuario.php) -->
-    <div class="container flex-grow-1 d-flex align-items-center justify-content-center">
-        <?php include '../formularios/registro_usuario.php'; ?>
-    </div>
+    <div class="main-container">
+    <?php include '../formularios/registro_usuario.php'; ?>
+</div>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3 mt-auto">

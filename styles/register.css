@@ -1,5 +1,9 @@
 body {
     background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* Ajuste del navbar */
@@ -9,6 +13,7 @@ body {
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* Ajuste del logo */
@@ -17,23 +22,42 @@ body {
     height: auto;
 }
 
+/* Contenedor principal */
+.container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
 /* Estilos del formulario */
 .card {
     border-radius: 10px;
     padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Ajuste de ancho */
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Centrar el formulario verticalmente */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Centrar el texto del título */
+.card h2 {
+    text-align: center;
+    font-weight: bold;
 }
 
-/* Ajuste del footer */
+/* Ajuste del botón */
+.btn {
+    width: 100%;
+}
+
+/* Footer */
 footer {
     background-color: #212529;
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: auto;
+    width: 100%;
 }
