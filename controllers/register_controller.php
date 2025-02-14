@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Insertar el usuario en la base de datos
         $sql = "INSERT INTO usuarios (nombre, email, telefono, contraseña, id_rol, estado) 
-                VALUES (:nombre, :email, :telefono, :password, 2, 1)";
+                VALUES (:nombre, :email, :telefono, :password, 4, 1)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
             'nombre' => $nombre,

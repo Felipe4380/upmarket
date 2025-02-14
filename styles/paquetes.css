@@ -1,0 +1,22 @@
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+h5.text-success {
+    font-weight: bold;
+}

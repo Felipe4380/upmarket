@@ -1,0 +1,22 @@
+.clientes-table th, .clientes-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.clientes-table th {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+.alert-danger {
+    font-size: 14px;
+}
