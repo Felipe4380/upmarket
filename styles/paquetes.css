@@ -1,22 +1,31 @@
 .card {
-    border-radius: 12px;
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.03);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: #212529;
 }
 
 .card-text {
-    font-size: 1rem;
+    font-size: 14px;
     color: #6c757d;
 }
 
-h5.text-success {
-    font-weight: bold;
+.card-footer {
+    border-top: none;
+}
+
+.btn-dark {
+    background-color: #212529;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #000;
 }
